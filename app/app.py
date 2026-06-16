@@ -15,9 +15,16 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Vibrant, ultra-colorful canvas with custom character layout panels
 st.markdown("""
     <style>
-        .stApp { background-color: #F8FAFC; color: #1E293B; }
+        /* Base page corporate canvas styling */
+        .stApp {
+            background-color: #F8FAFC;
+            color: #1E293B;
+        }
+
+        /* Solid deep blue enterprise sidebar menu workspace */
         section[data-testid="stSidebar"] {
             background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%) !important;
             border-right: 1px solid #CBD5E1;
@@ -27,6 +34,8 @@ st.markdown("""
         section[data-testid="stSidebar"] h3, section[data-testid="stSidebar"] label {
             color: #F8FAFC !important;
         }
+
+        /* Header strip indicator component decoration */
         .app-top-header-strip {
             background: linear-gradient(90deg, #2563EB 0%, #7C3AED 50%, #F59E0B 100%);
             padding: 14px 24px;
@@ -38,6 +47,8 @@ st.markdown("""
             color: #FFFFFF;
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
         }
+
+        /* Rich card panels for data containment */
         .white-grid-card {
             background-color: #FFFFFF;
             padding: 20px;
@@ -46,19 +57,49 @@ st.markdown("""
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
             margin-bottom: 15px;
         }
+        
+        /* Vibrant custom color blocks for primary metrics */
         .metric-gradient-blue { border-left: 5px solid #2563EB; background: linear-gradient(90deg, #FFFFFF 70%, #EFF6FF 100%); }
         .metric-gradient-red { border-left: 5px solid #EF4444; background: linear-gradient(90deg, #FFFFFF 70%, #FEF2F2 100%); }
         .metric-gradient-green { border-left: 5px solid #10B981; background: linear-gradient(90deg, #FFFFFF 70%, #ECFDF5 100%); }
         .metric-gradient-purple { border-left: 5px solid #8B5CF6; background: linear-gradient(90deg, #FFFFFF 70%, #F5F3FF 100%); }
         .metric-gradient-orange { border-left: 5px solid #F59E0B; background: linear-gradient(90deg, #FFFFFF 70%, #FFFBEB 100%); }
-        .metric-card-title { font-size: 11px; color: #64748B; font-weight: 700; text-transform: uppercase; letter-spacing: 0.75px; }
-        .metric-card-number { font-size: 28px; font-weight: 800; color: #0F172A; margin-top: 4px; }
-        .risk-badge-high { background-color: #FEE2E2; color: #EF4444; padding: 4px 10px; border-radius: 20px; font-weight: 700; font-size: 11px; border: 1px solid #FCA5A5; }
-        .risk-badge-med { background-color: #FEF3C7; color: #D97706; padding: 4px 10px; border-radius: 20px; font-weight: 700; font-size: 11px; border: 1px solid #FDE68A; }
+
+        .metric-card-title {
+            font-size: 11px;
+            color: #64748B;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.75px;
+        }
+        .metric-card-number {
+            font-size: 28px;
+            font-weight: 800;
+            color: #0F172A;
+            margin-top: 4px;
+        }
+
+        /* Risk factor level flag tags */
+        .risk-badge-high {
+            background-color: #FEE2E2;
+            color: #EF4444;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 11px;
+            border: 1px solid #FCA5A5;
+        }
+        .risk-badge-med {
+            background-color: #FEF3C7;
+            color: #D97706;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 11px;
+            border: 1px solid #FDE68A;
+        }
     </style>
 """, unsafe_allow_html=True)
-
-# [Remaining backend logic and UI code follows the same structure as previously established]
 
 PLOTLY_LIGHT_THEME_CONFIG = dict(
     template="plotly_white",
