@@ -1,36 +1,36 @@
-# Customer Churn Prediction using Machine Learning
+# 🚀 Customer Churn Prediction using Machine Learning
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
-![Docker](https://img.shields.io/badge/Docker-Container-blue)
-![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-red)
-![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black)
-
----
-
-## Project Overview
-
-Customer churn prediction is a Machine Learning project that predicts whether a customer is likely to leave a telecom service based on customer demographics, account information, and service usage.
-
-The project demonstrates an end-to-end ML workflow, including data preprocessing, feature engineering, model training, model deployment using Streamlit, Docker containerization, and CI/CD automation using Jenkins.
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?logo=streamlit)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
+![Jenkins](https://img.shields.io/badge/Jenkins-CI/CD-red?logo=jenkins)
+![GitHub](https://img.shields.io/badge/GitHub-Version_Control-black?logo=github)
 
 ---
 
-## Features
+# 📌 Project Overview
 
-- Customer churn prediction using Machine Learning
-- Data preprocessing and feature engineering
-- Interactive Streamlit web application
-- Model serialization using Pickle
-- Docker containerization
-- Jenkins CI/CD pipeline
-- GitHub version control
-- Responsive prediction interface
+Customer Churn Prediction is an end-to-end Machine Learning project that predicts whether a telecom customer is likely to leave the company based on demographic and service usage information.
+
+The project covers the complete ML lifecycle—from data preprocessing and model training to deployment using Streamlit, Docker containerization, and CI/CD automation with Jenkins.
 
 ---
 
-## Tech Stack
+# ✨ Features
+
+- Customer Churn Prediction
+- Data Cleaning & Feature Engineering
+- Machine Learning Model
+- Interactive Streamlit Web Application
+- Docker Containerization
+- Jenkins CI/CD Pipeline
+- GitHub Version Control
+- Automated Deployment
+
+---
+
+# 🛠 Tech Stack
 
 ### Programming Language
 - Python
@@ -40,14 +40,14 @@ The project demonstrates an end-to-end ML workflow, including data preprocessing
 - Pandas
 - NumPy
 
-### Data Visualization
+### Visualization
 - Matplotlib
 - Seaborn
 
-### Web Application
+### Web Framework
 - Streamlit
 
-### DevOps
+### DevOps & Cloud
 - Docker
 - Jenkins
 - Git
@@ -55,53 +55,112 @@ The project demonstrates an end-to-end ML workflow, including data preprocessing
 
 ---
 
-## Project Structure
+# 📂 Project Structure
 
-```
-customer-churn-prediction/
+```text
+Customer-Churn-Prediction
 │
 ├── app/
-│   ├── app.py
-│   ├── predict.py
-│   └── preprocessing.py
-│
+├── data/
 ├── models/
-│   ├── model.pkl
-│   ├── scaler.pkl
-│   └── encoder.pkl
-│
 ├── notebooks/
-│   ├── 01_eda.ipynb
-│   └── 02_model_training.ipynb
-│
+├── screenshots/
 ├── src/
-│
+├── .streamlit/
 ├── Dockerfile
 ├── Jenkinsfile
-├── requirements.txt
 ├── README.md
-└── .streamlit/
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
 
-## Machine Learning Workflow
+# 📸 Project Screenshots
 
-1. Data Collection
-2. Data Cleaning
-3. Exploratory Data Analysis
-4. Feature Engineering
-5. Data Preprocessing
-6. Model Training
-7. Model Evaluation
-8. Model Serialization
-9. Streamlit Deployment
-10. Docker Containerization
-11. Jenkins CI/CD Pipeline
+## 🏠 Streamlit Home Page
+
+![Home](screenshots/home.png)
 
 ---
 
-## Installation
+## 📊 Customer Churn Prediction
+
+![Prediction](screenshots/prediction.png)
+
+---
+
+## 🐳 Docker Container Running
+
+![Docker](screenshots/docker-dashboard.png)
+
+---
+
+## ⚙️ Jenkins Build Success
+
+![Jenkins](screenshots/jenkins-success.png)
+
+---
+
+## 🚀 Jenkins Pipeline
+
+![Pipeline](screenshots/pipeline-overview.png)
+
+---
+
+# 🏗 System Architecture
+
+```text
+            Developer
+                │
+                ▼
+            VS Code
+                │
+            git push
+                │
+                ▼
+             GitHub
+                │
+                ▼
+             Jenkins
+                │
+      ┌─────────┴─────────┐
+      ▼                   ▼
+ Install Dependencies   Build Docker Image
+      │                   │
+      └─────────┬─────────┘
+                ▼
+     Stop Existing Container
+                │
+                ▼
+      Run Docker Container
+                │
+                ▼
+      Streamlit Web Application
+                │
+                ▼
+      Customer Churn Prediction
+```
+
+---
+
+# 🤖 Machine Learning Workflow
+
+- Data Collection
+- Data Cleaning
+- Exploratory Data Analysis
+- Feature Engineering
+- Data Preprocessing
+- Model Training
+- Model Evaluation
+- Model Serialization
+- Streamlit Deployment
+- Docker Containerization
+- Jenkins CI/CD Automation
+
+---
+
+# 🚀 Installation
 
 Clone the repository
 
@@ -109,7 +168,7 @@ Clone the repository
 git clone https://github.com/sanjanahp16/Customer-Churn-Prediction.git
 ```
 
-Navigate to the project
+Move into the project
 
 ```bash
 cd Customer-Churn-Prediction
@@ -121,7 +180,7 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Run the Streamlit application
+Run the application
 
 ```bash
 streamlit run app/app.py
@@ -129,98 +188,47 @@ streamlit run app/app.py
 
 ---
 
-## Docker
+# 🐳 Docker
 
-Build Docker Image
+Build the image
 
 ```bash
 docker build -t customer-churn-app .
 ```
 
-Run Docker Container
+Run the container
 
 ```bash
 docker run -d -p 8501:8501 --name customer-churn customer-churn-app
 ```
 
-Open the application
+Application URL
 
-```
+```text
 http://localhost:8501
 ```
 
 ---
 
-## Jenkins CI/CD Pipeline
-
-The Jenkins pipeline automates the deployment process.
+# ⚙️ Jenkins CI/CD Pipeline
 
 Pipeline Stages
 
-- Checkout Source Code
-- Install Dependencies
-- Build Docker Image
-- Stop Existing Docker Container
-- Run New Docker Container
-- Deploy Updated Streamlit Application
+- ✅ Checkout Source Code
+- ✅ Install Dependencies
+- ✅ Build Docker Image
+- ✅ Stop Existing Docker Container
+- ✅ Run Docker Container
 
-CI/CD Flow
-
-```
-Developer
-      │
-      ▼
-Git Push
-      │
-      ▼
-GitHub Repository
-      │
-      ▼
-Jenkins Pipeline
-      │
-      ▼
-Docker Build
-      │
-      ▼
-Docker Container
-      │
-      ▼
-Streamlit Application
-```
+Every new commit pushed to GitHub can be automatically built and deployed using Jenkins.
 
 ---
 
-## Model Inputs
+# 📈 Future Improvements
 
-The application predicts customer churn using features such as:
-
-- Gender
-- Senior Citizen
-- Partner
-- Dependents
-- Tenure
-- Phone Service
-- Multiple Lines
-- Internet Service
-- Online Security
-- Online Backup
-- Device Protection
-- Tech Support
-- Streaming TV
-- Streaming Movies
-- Contract Type
-- Paperless Billing
-- Payment Method
-- Monthly Charges
-- Total Charges
-
----
-
-## Future Enhancements
-
-- Cloud Deployment using AWS EC2
+- AWS EC2 Deployment
 - Docker Hub Integration
-- GitHub Actions CI/CD
+- GitHub Actions
 - Kubernetes Deployment
 - Model Monitoring
 - Automated Model Retraining
@@ -229,15 +237,15 @@ The application predicts customer churn using features such as:
 
 ---
 
-## Author
+# 👩‍💻 Author
 
 **Sanjana H P**
 
 - GitHub: https://github.com/sanjanahp16
-- LinkedIn: *(Add your LinkedIn profile URL here)*
+- LinkedIn: https://www.linkedin.com/in/sanjana-hp-66292b295/
 
 ---
 
-## License
+# ⭐ Support
 
-This project is developed for educational and portfolio purposes.
+If you found this project useful, consider giving it a ⭐ on GitHub.
